@@ -2,6 +2,7 @@ import React from "react";
 import { Input, Checkbox, Button } from "antd";
 import { SearchStyleCheckBoxStyled } from "./Styled";
 import debounce from "lodash.debounce";
+import nicon from "../../download/n-icon.7z";
 
 const { Search } = Input;
 const options = [
@@ -63,7 +64,7 @@ export default function Header({ setSearch, setStyles }) {
 					defaultValue={["solid", "brands"]}
 					onChange={onChange}
 				/>
-				<a href="/download/n-icon.7z" download>
+				<a href={nicon} download>
 					<Button>Download nicon</Button>
 				</a>
 			</SearchStyleCheckBoxStyled>
